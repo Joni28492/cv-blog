@@ -1,14 +1,26 @@
 
+
 import "../styles/navbar.css"
 
 export const Navbar = () => {
 
-
+    
+    
+    // Portfolio
+    // Referentes
+    // Blog
+    // Certificaciones y títulos
+    
     return (
         <nav>
-            <li>elem 1</li>
-            <li>elem 2</li>
-            <li>elem 3</li>
+
+
+       
+          <ul>
+              {/* <li><NavLink to="/home">Home</NavLink></li> */}
+          </ul>
+         
+             
         </nav>        
     )
 }

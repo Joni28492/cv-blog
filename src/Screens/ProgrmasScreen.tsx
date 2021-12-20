@@ -12,6 +12,7 @@ export const ProgrmasScreen = () => {
             <div style={{
                 display: "flex",
                 flexWrap: "wrap",
+                margin: '10px',
                 marginLeft: '25px'
             }}>
                 {

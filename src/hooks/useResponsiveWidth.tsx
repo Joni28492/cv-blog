@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 
-export const useResponsiveWidth = (initialState=window.innerWidth) => {
+export const useResponsiveWidth = (initialState:number=window.innerWidth) => {
 
     const [width, setWidth] = useState(initialState);
   
