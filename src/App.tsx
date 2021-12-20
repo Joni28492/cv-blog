@@ -4,7 +4,7 @@ import "./styles/global.css";
 
 import { Navbar } from "./components/Navbar";
 import { SocialMedia } from "./SocialMedia";
-import { useEffect, useState } from "react";
+import { useResponsiveWidth } from './hooks/useResponsiveWidth';
 
 
 
@@ -13,22 +13,7 @@ import { useEffect, useState } from "react";
 function App() {
 
 
-
-  const [width, setWidth] = useState(window.innerWidth);
-  
-
-
-
-
-  useEffect(() => {
-    // console.log("Resolucion Cambio a "+ width );
-    window.addEventListener("resize", ()=>{
-      // console.log("Cambio " +  window.innerWidth)
-      setWidth(window.innerWidth);
-    });
-  }, [width]);
-
-
+  const {width} =  useResponsiveWidth();
 
 
   return (
@@ -45,9 +30,7 @@ function App() {
             <h1>Joni Fernández</h1>
             <hr />
           </div>
-          <div>
             <SocialMedia />
-          </div>
       </div>}
 
      <div className="content-main" style={{
@@ -57,6 +40,7 @@ function App() {
      }}>
           <Navbar />
           <MainRoute />
+        
      </div>
     
  

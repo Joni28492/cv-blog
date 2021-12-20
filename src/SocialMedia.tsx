@@ -16,6 +16,7 @@ export const SocialMedia = () => {
             display: 'flex',
             textDecoration: 'none',
             fontSize: '28px',
+            justifyContent: "center"
           
            
         }}>
