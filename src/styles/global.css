@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.content-main{
+    width: 80vw;
+}
+.img-large{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    width: 22vw;
+    height: 100vh;
+    margin-bottom: 0px;
+    /*432 924*/
+    background-size: 432px 924px;
+    background-repeat: no-repeat;
+    background-image: url('../img/foto2.jpg');
+
+
+}
+
+
+/*Mobile*/
+/*480*/
+
+
+
+
+
+
+
+
+/*Tablet 1024*/

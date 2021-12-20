@@ -1,0 +1,20 @@
+
+
+/*TODO.: Crear Query */
+nav{
+    width: 100%;
+    font-size: 22px;
+    height: 45px;
+    background-color:lightskyblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid transparent;
+   
+}
+
+
+li {
+    list-style: none;
+}
+
