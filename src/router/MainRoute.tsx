@@ -34,10 +34,13 @@ export const MainRoute = () => {
       <BrowserRouter>
         <Routes>
     
+          {/* falta Experiencia */}
+
           <Route  path="/blog" element={<BlogScreen />} />
           <Route  path="/certificaciones" element={<CertificacionesScreen />} />
-          <Route  path="/programas" element={<ProgrmasScreen />} />
+          <Route  path="/programas" element={<ProgrmasScreen />} /> 
           <Route  path="/portfolio" element={<PortfoliScreen />} />
+          {/* Referentes Listo */}
           <Route  path="/referentes" element={<ReferentesScreen />} />
           <Route  path="/sobremi" element={<SobreMiScreen />} />
           <Route  path="*" element={<HomeScreen />} /> 

@@ -1,11 +1,14 @@
 import React from 'react'
 import { IconAwesome } from '../components/IconAwesome'
+import { ProgramWithOutIcon } from '../components/ProgramWithOutIcon';
 import { iconProgrammingList } from '../data/IconsHardData'
+import { programasSinIconos } from '../data/ProgramasSinIconos';
+const { v4: uuidv4 } = require('uuid');
 
 export const ProgrmasScreen = () => {
     return (
-        <div>
-            <h1>Programs Screen</h1>
+        <div className='container text-center'>
+            <h1>Programas y tecnologias</h1>
             <hr />
 
 
@@ -13,20 +16,41 @@ export const ProgrmasScreen = () => {
                 display: "flex",
                 flexWrap: "wrap",
                 margin: '10px',
-                marginLeft: '25px'
+                marginTop: '25px',
+                marginLeft: '25px',
+                justifyContent: 'center'
             }}>
                 {
                     iconProgrammingList.map(({color, icon}) =>{
-                        return (<IconAwesome color={color} icon={icon}/>)
+                        return (<IconAwesome key={uuidv4()} color={color} icon={icon}/>)
 
                     })
                 }
             </div>
 
             
+            <div style={{
+                display: 'flex',
+                flexDirection: 'row',
+                flexWrap: 'wrap',
+                justifyContent: 'center'
+            }}>
+                {
+                    programasSinIconos.map(({nombre, stars, usedFor})=>{
+                       return (
+                           <div key={uuidv4()}  className='m-1'>
+                                <ProgramWithOutIcon  nombre={nombre} stars={stars} usedFor={usedFor} />
+                           </div>
+                       )
+                    })
+                }
+            </div>
+                
+
+               
 
 
-            
+
         </div>
     )
 }

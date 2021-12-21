@@ -73,25 +73,6 @@ export const iconSocialMediaList = [
 ];
 
 
-export const sectionList = [
-     {    text:"Seguridad informatica",
-          icon: "terminal",
-          color:"secondary"
-     },
-     {    text:"Modelado 3D",
-          icon: "cubes",
-          color:"warning"
-     },
-     {    text:"Programación",
-          icon:"laptop-code",
-          color:"info"
-     },
-     {    text:"Fotografía",
-          icon: "camera",
-          color:"success"
-     },
-];
-
 
 export const formacionListItmes = [
      {
