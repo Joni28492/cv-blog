@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { IconAwesome } from '../components/IconAwesome'
 import { ProgramWithOutIcon } from '../components/ProgramWithOutIcon';
 import { iconProgrammingList } from '../data/IconsHardData'
@@ -21,14 +21,14 @@ export const ProgrmasScreen = () => {
                 justifyContent: 'center'
             }}>
                 {
-                    iconProgrammingList.map(({color, icon}) =>{
-                        return (<IconAwesome key={uuidv4()} color={color} icon={icon}/>)
+                    iconProgrammingList.map(({ color, icon }) => {
+                        return (<IconAwesome key={uuidv4()} color={color} icon={icon} />)
 
                     })
                 }
             </div>
 
-            
+
             <div style={{
                 display: 'flex',
                 flexDirection: 'row',
@@ -36,18 +36,18 @@ export const ProgrmasScreen = () => {
                 justifyContent: 'center'
             }}>
                 {
-                    programasSinIconos.map(({nombre, stars, usedFor})=>{
-                       return (
-                           <div key={uuidv4()}  className='m-1'>
-                                <ProgramWithOutIcon  nombre={nombre} stars={stars} usedFor={usedFor} />
-                           </div>
-                       )
+                    programasSinIconos.map(({ nombre, stars, usedFor, img }) => {
+                        return (
+                            <div key={uuidv4()} className='m-1'>
+                                <ProgramWithOutIcon nombre={nombre} stars={stars} usedFor={usedFor} img={img} />
+                            </div>
+                        )
                     })
                 }
             </div>
-                
 
-               
+
+
 
 
 
