@@ -1,15 +1,16 @@
 
 
+import { BrowserRouter } from "react-router-dom";
 import { CurriculumApplication } from "./components/CurriculumApplication";
 import { UserContext } from "./UserContext";
 
 const store = {
-  theme:{
+  theme: {
     dark: null,
     light: null,
   },
   colors: {
-    
+
   },
 }
 
@@ -18,13 +19,15 @@ const store = {
 function App() {
 
 
-  return ( 
+  return (
     <UserContext.Provider value={store}>
-      <CurriculumApplication />
+      <BrowserRouter>
+        <CurriculumApplication />
+      </BrowserRouter>
     </UserContext.Provider>
-    
-  
-    );
+
+
+  );
 }
 
 export default App;

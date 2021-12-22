@@ -1,7 +1,6 @@
 import { HomeScreen } from '../Screens/HomeScreen';
 
 import {
-  BrowserRouter, //prblemos 404
   Routes,
   Route,
 } from "react-router-dom";
@@ -14,6 +13,7 @@ import { PortfoliScreen } from '../Screens/PortfoliScreen';
 import { BlogScreen } from '../Screens/BlogScreen';
 import { CertificacionesScreen } from '../Screens/CertificacionesScreen';
 import { ExperienciaScreen } from '../Screens/ExperienciaScreen';
+import { FormacionScreen } from '../Screens/FormacionScreen';
 
 
 
@@ -24,32 +24,26 @@ export const MainRoute = () => {
 
 
 
-  // Portfolio
-  // Referentes
-  // Blog
-  // Certificaciones 
-
   return (
     <div>
       {(1024 > width) && <SocialMedia />}
-      <BrowserRouter>
-        <Routes>
 
-          {/* falta Experiencia */}
+      <Routes>
 
-          <Route path="/blog" element={<BlogScreen />} />
-          <Route path="/certificaciones" element={<CertificacionesScreen />} />
-          <Route path="/experiencia" element={<ExperienciaScreen />} />
-          {/* Programas Listo */}
-          <Route path="/programas" element={<ProgrmasScreen />} />
-          <Route path="/portfolio" element={<PortfoliScreen />} />
-          {/* Referentes Listo */}
-          <Route path="/referentes" element={<ReferentesScreen />} />
-          {/* Sobremi Listo */}
-          <Route path="/sobremi" element={<SobreMiScreen />} />
-          <Route path="*" element={<HomeScreen />} />
-        </Routes>
-      </BrowserRouter>
+        {/* Programas Listo */}
+        {/* Referentes Listo */}
+        {/* Sobremi Listo */}
+        <Route path="/blog" element={<BlogScreen />} />
+        <Route path="/certificaciones" element={<CertificacionesScreen />} />
+        <Route path="/experiencia" element={<ExperienciaScreen />} />
+        <Route path="/formacion" element={<FormacionScreen />} />
+        <Route path="/programas" element={<ProgrmasScreen />} />
+        <Route path="/portfolio" element={<PortfoliScreen />} />
+        <Route path="/referentes" element={<ReferentesScreen />} />
+        <Route path="/sobremi" element={<SobreMiScreen />} />
+        <Route path="*" element={<HomeScreen />} />
+      </Routes>
+
 
     </div>
   );
