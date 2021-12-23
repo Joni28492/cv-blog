@@ -12,6 +12,12 @@ const store = {
   colors: {
 
   },
+  styleAnchorNone: {
+    textDecoration: 'none',
+    color: "white"
+  }
+
+
 }
 
 

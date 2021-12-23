@@ -72,7 +72,14 @@ export const iconSocialMediaList = [
     
 ];
 
-
+// interface ExperienciaInterface {
+//      color: string;
+//      year: string;
+//      title: string;
+//      company: string;
+//      more: string;
+//  }
+ 
 
 export const formacionListItmes = [
      {

@@ -33,6 +33,8 @@ export const MainRoute = () => {
         {/* Programas Listo */}
         {/* Referentes Listo */}
         {/* Sobremi Listo */}
+        {/* experiencia Listo */}
+        {/* blog semi-Listo */}
         <Route path="/blog" element={<BlogScreen />} />
         <Route path="/certificaciones" element={<CertificacionesScreen />} />
         <Route path="/experiencia" element={<ExperienciaScreen />} />

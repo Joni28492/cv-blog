@@ -26,7 +26,9 @@ export const Navbar = () => {
     //TODO.: Subir el texto del Navbar
     return (
         <div  >
-            <nav className="  navbar-dark bg-success" style={{
+            <nav className="  navbar-dark" style={{
+                backgroundColor: 'purple',
+                height: '60px',
                 display: "flex",
                 flexDirection: 'row',
                 justifyContent: 'space-between',
@@ -34,7 +36,24 @@ export const Navbar = () => {
                 paddingBottom: '10px'
             }}>
 
-                <Link className="navbar-brand " to="/">Joni Fernández</Link>
+                <Link to="/" style={{
+                    display: 'flex',
+                    flexDirection: 'row'
+                }}>
+                    <i className="fas fa-user-secret" style={{
+                        fontSize: 40,
+                        color: "white",
+                        marginBottom: '5px',
+                        marginTop: '-10px',
+
+                    }} />
+                    {(width > 1140) && <p style={{
+                        marginLeft: '12px',
+                        textDecoration: 'none',
+                        color: "white",
+
+                    }}>Joni</p>}
+                </Link>
 
 
 
@@ -45,14 +64,14 @@ export const Navbar = () => {
                             display: 'flex',
                             flexDirection: 'row',
                         }}>
-                            <NavLink style={navLinkStyle} to="/portfolio">portfolio</NavLink>
-                            <NavLink style={navLinkStyle} to="/experiencia">experiencia</NavLink>
-                            <NavLink style={navLinkStyle} to="/formacion">formacion</NavLink>
-                            <NavLink style={navLinkStyle} to="/programas">programas</NavLink>
-                            <NavLink style={navLinkStyle} to="/certificaciones">certificaciones</NavLink>
-                            <NavLink style={navLinkStyle} to="/referentes">referentes</NavLink>
-                            <NavLink style={navLinkStyle} className="active" to="/blog">blog</NavLink>
-                            <NavLink style={navLinkStyle} to="/sobremi">sobremi</NavLink>
+                            {/* <NavLink style={navLinkStyle} to="/portfolio">Portfolio</NavLink> */}
+                            <NavLink style={navLinkStyle} to="/experiencia">Experiencia</NavLink>
+                            <NavLink style={navLinkStyle} to="/formacion">Formación</NavLink>
+                            <NavLink style={navLinkStyle} to="/programas">Programas</NavLink>
+                            {/* <NavLink style={navLinkStyle} to="/certificaciones">Certificaciones</NavLink> */}
+                            <NavLink style={navLinkStyle} to="/referentes">Referentes</NavLink>
+                            {/* <NavLink style={navLinkStyle} className="active" to="/blog">Blog</NavLink> */}
+                            <NavLink style={navLinkStyle} to="/sobremi">Mas</NavLink>
                         </div> :
                         <i className="fas fa-bars" onClick={handleVisible} />
                 }
@@ -69,18 +88,18 @@ export const Navbar = () => {
                     height: 'auto',
                     display: 'flex',
                     flexDirection: 'column',
-                    backgroundColor: 'red',
+                    backgroundColor: '#b570b4',
                     justifyContent: 'center',
                     alignItems: 'center'
                 }}>
-                    <NavLink style={navLinkStyle} onClick={() => setVisible(false)} to="/portfolio">portfolio</NavLink>
-                    <NavLink style={navLinkStyle} onClick={() => setVisible(false)} to="/experiencia">experiencia</NavLink>
-                    <NavLink style={navLinkStyle} onClick={() => setVisible(false)} to="/formacion">formacion</NavLink>
-                    <NavLink style={navLinkStyle} onClick={() => setVisible(false)} to="/programas">programas</NavLink>
-                    <NavLink style={navLinkStyle} onClick={() => setVisible(false)} to="/certificaciones">certificaciones</NavLink>
-                    <NavLink style={navLinkStyle} onClick={() => setVisible(false)} to="/referentes">referentes</NavLink>
-                    <NavLink style={navLinkStyle} onClick={() => setVisible(false)} className="active" to="/blog">blog</NavLink>
-                    <NavLink style={navLinkStyle} onClick={() => setVisible(false)} to="/sobremi">sobremi</NavLink>
+                    {/* <NavLink style={navLinkStyle} onClick={() => setVisible(false)} to="/portfolio">Portfolio</NavLink> */}
+                    <NavLink style={navLinkStyle} onClick={() => setVisible(false)} to="/experiencia">Experiencia</NavLink>
+                    <NavLink style={navLinkStyle} onClick={() => setVisible(false)} to="/formacion">Formación</NavLink>
+                    <NavLink style={navLinkStyle} onClick={() => setVisible(false)} to="/programas">Programas</NavLink>
+                    {/* <NavLink style={navLinkStyle} onClick={() => setVisible(false)} to="/certificaciones">Certificaciones</NavLink> */}
+                    <NavLink style={navLinkStyle} onClick={() => setVisible(false)} to="/referentes">Referentes</NavLink>
+                    {/* <NavLink style={navLinkStyle} onClick={() => setVisible(false)} className="active" to="/blog">Blog</NavLink> */}
+                    <NavLink style={navLinkStyle} onClick={() => setVisible(false)} to="/sobremi">Sobre mi</NavLink>
                 </nav>
             }
 
