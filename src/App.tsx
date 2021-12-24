@@ -3,6 +3,7 @@
 import { BrowserRouter } from "react-router-dom";
 import { CurriculumApplication } from "./components/CurriculumApplication";
 import { UserContext } from "./UserContext";
+import { Navbar } from './components/Navbar';
 
 const store = {
   theme: {
@@ -28,6 +29,7 @@ function App() {
   return (
     <UserContext.Provider value={store}>
       <BrowserRouter>
+        <Navbar />
         <CurriculumApplication />
       </BrowserRouter>
     </UserContext.Provider>

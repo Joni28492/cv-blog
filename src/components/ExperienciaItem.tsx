@@ -12,7 +12,7 @@ interface ExperienciaInterface {
 
 export const ExperienciaItem = ({ color = 'red', year = '2020-2021', title = 'titulo', company = 'compañia', more = 'lorem' }: ExperienciaInterface) => {
     return (
-        <div style={{
+        <div className="animate__animated animate__lightSpeedInRight" style={{
             margin: '5px',
             border: `2px solid ${color}`,
             width: '420px',

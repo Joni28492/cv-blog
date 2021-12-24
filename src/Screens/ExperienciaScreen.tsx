@@ -5,8 +5,8 @@ const { v4: uuidv4 } = require('uuid');
 
 export const ExperienciaScreen = () => {
     return (
-        <div className="container text-center">
-            <h1>ExperienciaScreen</h1>
+        <div className="container text-center mt-2">
+            <h1>Experiencia</h1>
             <hr />
 
             <div style={{

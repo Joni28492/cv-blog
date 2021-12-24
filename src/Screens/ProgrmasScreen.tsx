@@ -7,7 +7,7 @@ const { v4: uuidv4 } = require('uuid');
 
 export const ProgrmasScreen = () => {
     return (
-        <div className='container text-center'>
+        <div className='container text-center animate__animated animate__backInDown '>
             <h1>Programas y tecnologias</h1>
             <hr />
 

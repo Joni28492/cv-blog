@@ -19,7 +19,7 @@ export const ReferentesScreen = () => {
 
 
     return (
-        <div className="container">
+        <div className="container animate__animated animate__backInRight">
             <h1 className="text-center">Mis Referentes</h1>
             <hr />
 

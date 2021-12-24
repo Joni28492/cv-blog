@@ -25,9 +25,10 @@ export const Navbar = () => {
 
     //TODO.: Subir el texto del Navbar
     return (
-        <div  >
-            <nav className="  navbar-dark" style={{
+        <div className="  sticky-top">
+            <nav className="navbar-dark" style={{
                 backgroundColor: 'purple',
+                width: `${width}`,
                 height: '60px',
                 display: "flex",
                 flexDirection: 'row',
@@ -47,12 +48,7 @@ export const Navbar = () => {
                         marginTop: '-10px',
 
                     }} />
-                    {(width > 1140) && <p style={{
-                        marginLeft: '12px',
-                        textDecoration: 'none',
-                        color: "white",
 
-                    }}>Joni</p>}
                 </Link>
 
 
@@ -73,7 +69,9 @@ export const Navbar = () => {
                             {/* <NavLink style={navLinkStyle} className="active" to="/blog">Blog</NavLink> */}
                             <NavLink style={navLinkStyle} to="/sobremi">Mas</NavLink>
                         </div> :
-                        <i className="fas fa-bars" onClick={handleVisible} />
+                        <i className="fas fa-bars" style={{
+                            color: "white"
+                        }} onClick={handleVisible} />
                 }
 
 
