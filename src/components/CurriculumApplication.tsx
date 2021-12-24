@@ -18,7 +18,7 @@ export const CurriculumApplication = () => {
 
 
       {(width > 1024) &&
-        <div className="img-large text-center container " >
+        <div className="img-large text-center container sticky-left" >
 
           <div>
             <h1>Joni Fernández</h1>
@@ -27,7 +27,7 @@ export const CurriculumApplication = () => {
           <SocialMedia />
         </div>}
 
-      <div className="content-main" style={{
+      <div className="content-main overflow-scroll" style={{
         width: (width > 1024) ? '80vw' : '100vw',
         height: (width > 1024) ? '100vh' : '100vh',
 
