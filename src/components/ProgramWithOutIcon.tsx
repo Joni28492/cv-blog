@@ -8,13 +8,15 @@ export const ProgramWithOutIcon = ({ nombre = 'Nombre', stars = 5, usedFor = 'pa
 
     return (
         <div className="container border border-success rounded-3 " style={{
+            overflow: 'hidden',
+            width: '320px',
             marginTop: '25px',
             marginLeft: 0,
             marginRight: 0,
             marginBottom: 8,
             paddingLeft: 0,
             paddingRight: 0,
-            width: '550px'
+
         }}>
             <div style={{
                 paddingRight: '15px',
@@ -42,7 +44,8 @@ export const ProgramWithOutIcon = ({ nombre = 'Nombre', stars = 5, usedFor = 'pa
 
             }}>
                 <p style={{
-                    marginRight: '10px'
+                    marginRight: '10px',
+
                 }}
                 >{usedFor}</p>
 

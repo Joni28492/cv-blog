@@ -2,7 +2,7 @@ import React from 'react'
 
 export const SobreMiScreen = () => {
     return (
-        <div className='container text-center animate__animated animate__fadeIn animate__slow'>
+        <div className='container text-center animate__animated animate__fadeIn animate__slow mt-5 mr-5 ml-5'>
             <h1>Sobre mi</h1>
             <hr />
             <blockquote style={{

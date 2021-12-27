@@ -37,11 +37,11 @@ export const ReferentesScreen = () => {
                 {/* inicio tarjeta */}
 
                 {
-                    referentes.map(({ nombre, img, especialidad, desc, web, icon = 'fas fa-link' }) => {
+                    referentes.map(({ nombre, img, especialidad, desc, web, icon = 'fas fa-link' }, i) => {
 
 
                         return (
-                            <li key={uuidv4()} style={{
+                            <li key={uuidv4()} className={`animate__animated animate__bounceInDown animate__delay-${(i <= 5) ? i.toString() : '5'}s`} style={{
                                 margin: '12px',
                                 width: '500px',
                                 padding: '15px',

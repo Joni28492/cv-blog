@@ -18,8 +18,8 @@ export const ExperienciaScreen = () => {
             }}>
 
                 {
-                    formacionListItmes.map(({ color, year, title, company, more }) => {
-                        return (<ExperienciaItem key={uuidv4()} color={color} year={year} title={title} company={company} more={more} />)
+                    formacionListItmes.map(({ color, year, title, company, more }, i) => {
+                        return (<ExperienciaItem key={uuidv4()} color={color} year={year} title={title} company={company} more={more} delay={(i <= 5) ? i.toString() : '5'} />)
                     })
                 }
 

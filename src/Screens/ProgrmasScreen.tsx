@@ -5,6 +5,9 @@ import { iconProgrammingList } from '../data/IconsHardData'
 import { programasSinIconos } from '../data/ProgramasSinIconos';
 const { v4: uuidv4 } = require('uuid');
 
+
+
+// React Stars genera warnings
 export const ProgrmasScreen = () => {
     return (
         <div className='container text-center animate__animated animate__backInDown '>

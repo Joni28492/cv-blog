@@ -1,18 +1,10 @@
 
 
-interface ExperienciaInterface {
-    color: string;
-    year: string;
-    title: string;
-    company: string;
-    more: string;
-}
 
 
-
-export const ExperienciaItem = ({ color = 'red', year = '2020-2021', title = 'titulo', company = 'compañia', more = 'lorem' }: ExperienciaInterface) => {
+export const ExperienciaItem = ({ color = 'red', year = '2020-2021', title = 'titulo', company = 'compañia', more = 'lorem', delay = '0' }) => {
     return (
-        <div className="animate__animated animate__lightSpeedInRight" style={{
+        <div className={`animate__animated animate__lightSpeedInRight animate__delay-${delay}s`} style={{
             margin: '5px',
             border: `2px solid ${color}`,
             width: '420px',
