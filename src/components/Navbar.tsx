@@ -60,7 +60,7 @@ export const Navbar = () => {
                             display: 'flex',
                             flexDirection: 'row',
                         }}>
-                            {/* <NavLink style={navLinkStyle} to="/portfolio">Portfolio</NavLink> */}
+                            <NavLink style={navLinkStyle} to="/portfolio">Portfolio</NavLink>
                             <NavLink style={navLinkStyle} to="/experiencia">Experiencia</NavLink>
                             <NavLink style={navLinkStyle} to="/formacion">Formación</NavLink>
                             <NavLink style={navLinkStyle} to="/programas">Programas</NavLink>
