@@ -90,7 +90,7 @@ export const Navbar = () => {
                     justifyContent: 'center',
                     alignItems: 'center'
                 }}>
-                    {/* <NavLink style={navLinkStyle} onClick={() => setVisible(false)} to="/portfolio">Portfolio</NavLink> */}
+                    <NavLink style={navLinkStyle} onClick={() => setVisible(false)} to="/portfolio">Portfolio</NavLink>
                     <NavLink style={navLinkStyle} onClick={() => setVisible(false)} to="/experiencia">Experiencia</NavLink>
                     <NavLink style={navLinkStyle} onClick={() => setVisible(false)} to="/formacion">Formación</NavLink>
                     <NavLink style={navLinkStyle} onClick={() => setVisible(false)} to="/programas">Programas</NavLink>

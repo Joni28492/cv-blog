@@ -96,6 +96,7 @@ export const HomeScreen = () => {
 
                     <SocialMedia />
                     <p className="card-text"><small className="text-muted">Por ahora esta web solo tiene visibles algunas secciones pero posteriormente irán aumentando</small></p>
+                    <p className="card-text"><small className="text-muted">*Nota: Puede que algunas imagenes no carguen debido a que se obtienen de otras webs via url y esta puede cambiar</small></p>
                 </div>
             </div>
 
